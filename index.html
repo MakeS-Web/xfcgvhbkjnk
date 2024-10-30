@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .container{
+      width: 1500px;
+      height: 800px;
+      background-image: url(./images/bg-intro-desktop.png);
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      
+    }
+    body{
+      background-color: aliceblue;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .column1{
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 800px;
+      padding-left: 200px;
+    }
+    *{
+      font-family: sans-serif;
+    }
+    h1{
+      color: white;
+      font-size: 50px;
+    }
+    .tone{
+      background-color: rgba(255, 0, 0, 0.452);
+      width: 1500px;
+      height: 800px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -2;
+    }
+    p{
+      max-width: 450px;
+      margin-top: 0px;
+    }
+    a{
+      color: #c2bae8;
+      text-decoration: none;
+      font-weight: 100;
+    }
+    .blue{
+      background-color: #5d54a3;
+      height: 60px;
+      width: 550px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60px;
+      box-shadow: rgba(0, 0, 0, 0.39) 0px 7px 0px 0px;
+    }
+    span{
+    font-weight: 600;
+    color: red;
+    }
+    h6{
+      font-weight: 100;
+    }
+    .white{
+      width: 550px;
+      height: 550px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.39) 0px 7px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .column2{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+    }
+    .name{
+      background-color: white;
+      height: 30px;
+      width: 400px;
+      border-radius: 5px;
+      border: 1px solid grey;    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding-left: 20px;
+    }
+    .write{
+      display: flex;
+      justify-content: center;
+    }
+    .write1{
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+    button{
+      color: white;
+      border: none;
+      background-color: #37cc8a;
+      width: 425px;
+      height: 50px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.39) 0px 3px 0px 0px;
+    }
+    h6{
+      color: grey;
+    }
+    .text{
+      display: flex;
+      justify-content: center;
+      margin: -40px;
+    }
+    strong{
+      color: white;
+    }
+    @media screen and (max-width: 450px){
+      .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 100%;
+        width: 100%;
+        height: 1300px;
+        max-width: 100%;
+        gap: 0px
+      }
+      .tone{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 1300px;
+        max-width: 100%;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .blue{
+        width: 350px;
+        align-items: center;
+      }
+      .white{
+        width: 350px;
+        align-items: center;
+      }
+      .name{
+        width: 300px;
+      }
+      h6{
+        max-width: 300px;
+        text-align: center;
+      }
+      button{
+        width: 300px;
+      }
+      .column1{
+        margin-top: -250px;
+        padding-left: 0;
+        text-align: center;
+        margin-left: 0px;
+      }
+      .column2{
+        margin-top: -150px;
+        padding-left: 0;
+        text-align: center;
+        margin-left: 0px;
+      }
+      p{
+        max-width: 300px;
+        text-align: center;
+        padding-left: 70px;
+      }
+    }
+  </style>
+</head>
+<div class="container">
+  <div class="column1">
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. 
+    </p>
+  </div>
+  <div class="column2">
+    <div class="blue">
+      <a href="#"> <strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
+    </div>
+    <div class="white">
+      <div class="write1">
+        <input class="name" type="text" placeholder="Name">
+      </div>
+      <div class="write">
+        <input class="name" type="text" placeholder="Last Name">
+      </div>
+      <div class="write">
+        <input class="name" type="text" placeholder="Email Address">
+      </div>
+      <div class="write">
+        <input class="name" type="text" placeholder="Password">
+      </div>
+      <div class="write">
+        <button class="btn">CLAIM YOUR FREE TRIAL</button>
+      </div>
+      <div class="text">
+        <h6>By clicking the button, you are agreeing to our <span>Terms and Services</span>
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="tone"></div>
+</div>
+<body>
+</body>
+</html>
